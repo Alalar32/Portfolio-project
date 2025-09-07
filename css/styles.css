@@ -61,11 +61,16 @@ a:hover {
 
 
 .navbar {
-  display: flex;
-  justify-content:space-between;
-  align-items: center;
-  padding: 15px;
-  background: #0A192F
+  osition: fixed;       
+      top: 0;
+      left: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;  /* logo left, links right */
+      align-items: center;
+      background: #1f1f1f;
+      padding: 10px 40px;              /* space inside navbar */
+      z-index: 1000;
 }
 
 .navbar .logo {
