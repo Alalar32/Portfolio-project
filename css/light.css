@@ -84,6 +84,7 @@ a:hover {
 }
 
 .navbar .nav-links a {
+    text-decoration: none;
   color: #0A192F;
   font-weight: bold;
 }
@@ -218,12 +219,16 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
+    
+   
+
     .navbar{
         padding: 12px;
         font-size: 13px;
         gap: 10px;
+        
     }
-    
+
   .about {
     flex-direction: column;
     text-align: center;
