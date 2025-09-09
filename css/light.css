@@ -218,6 +218,12 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
+    .navbar{
+        padding: 12px;
+        font-size: 13px;
+        gap: 10px;
+    }
+    
   .about {
     flex-direction: column;
     text-align: center;
