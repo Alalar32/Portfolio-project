@@ -1,0 +1,225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  animation: fadeOut 1s ease 1s forwards; 
+}
+
+.spinner {
+  width: 60px;
+  height: 60px;
+  border: 5px solid #444;
+  border-top: 5px solid #00adb5;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 15px;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+body {
+  background: #FFFFFF;  
+  color: #0A192F;
+  line-height: 1.6;
+}
+
+a {
+  color: #0A192F;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00ADB5;
+  text-decoration: underline;
+}
+
+/* Navbar */
+.navbar {
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background: #f0f0f0;
+  padding: 10px 40px;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: #0A192F;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar .nav-links a {
+  color: #0A192F;
+  font-weight: bold;
+}
+
+.navbar .nav-links a.active {
+  color: #00ADB5;
+}
+
+/* Hero */
+.hero {
+  padding: 100px 20px 60px;
+  text-align: center;
+  background: #e6f2f2;
+}
+
+.hero h1 span {
+  color: #00ADB5;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 10px;
+  background: #0A192F;
+  color: #FFFFFF;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #00ADB5;
+  color: #FFFFFF;
+}
+
+.btn.secondary {
+  background: #8892B0;
+  color: #FFFFFF;
+}
+
+/* Sections */
+section {
+  padding: 20px 30px;
+}
+
+h1, h2, h3 {
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.intro, .about, .skills, .hobbies, .projects, .contact {
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* About */
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 32px;
+}
+
+.profile-pic {
+  width: 250px;
+  opacity: 85%;
+}
+
+.bio {
+  flex: 1;
+}
+
+/* Cards */
+.skill-cards, .hobby-cards, .project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.card {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  flex: 1 1 250px;
+  transition: transform 0.3s;
+  border: 1px solid #ddd;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+/* Contact */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 500px;
+  margin: auto;
+}
+
+.contact-form input, .contact-form textarea {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.contact-info {
+  margin-top: 24px;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #f0f0f0;
+  margin-top: 32px;
+  border-top: 1px solid #00ADB5;
+  color: #0A192F;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+  }
+}
