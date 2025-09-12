@@ -174,11 +174,12 @@ h1, h2, h3 {
 }
 
 .card {
+  /* display: flex; */
   background: #112240;
   padding: 24px;
   border-radius: 8px;
   text-align: center;
-  flex: 1 1 250px;
+  flex:  300px;
   transition: transform 0.3s;
 }
 
