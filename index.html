@@ -5,21 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio | Home</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-  <!-- Loader -->
+  
+     
   <div id="loader">
     <div class="spinner"></div>
   </div>
 
+  <section id="index">
   <header>
     <nav class="navbar">
-      <a href="index.html" class="logo">MyPortfolio</a>
+      <a href="index.html" class="logo"><i class="fas fa-laptop"></i></a>
       <ul class="nav-links">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#index" ><i class="fas fa-home"></i> Home</a></li>
+        <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+        <li><a href="#projects"><i class="fas fa-briefcase"></i> Projects</a></li>
+        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -28,13 +31,13 @@
   <section class="hero">
     <h1>Hello, I'm <span>Elijah Tawiah Dotse</span></h1>
     <p>Aspiring Web Developer | Lifelong Learner</p>
-    <a href="projects.html" class="btn">See My Work</a>
+    <a href="#projects" class="btn">See My Work</a>
   </section>
 
   
   <section class="intro">
     <p>Welcome to my portfolio! I am passionate about web development and constantly learning new skills. This site showcases my projects, skills, and journey as a developer.</p>
-    <a href="about.html" class="btn secondary">Learn More About Me</a>
+    <a href="#about" class="btn secondary">Learn More About Me</a>
   </section>
 
   <section class="projects-preview">
@@ -42,22 +45,115 @@
     <div class="project-cards">
       <div class="card">
         <img src="images/project2.png" alt="Project 1">
-        <h3>Project One</h3>
+        <h3>Eco Living</h3>
       </div>
       <div class="card">
         <img src="images/project1.png" alt="Project 2">
-        <h3>Project Two</h3>
+        <h3>TravelMate</h3>
       </div>
       <div class="card">
         <img src="images/project3.png" alt="Project 3">
-        <h3>Project Three</h3>
+        <h3>Healthy Living</h3>
       </div>
     </div>
   </section>
+</section>
+  
 
+  <section class="about" id="about" class="active">
+    <img src="images/mypc.jpeg" alt="My Photo" class="profile-pic">
+    <div class="bio">
+     <p>
+    My name is <strong>Elijah Tawiah Dotse</strong>, a passionate learner and aspiring technology professional with a deep interest in problem-solving, creativity, and innovation.
+     I am currently a student at Ghana Communication Technology University (GCTU), pursuing studies in computer science–related fields, where I am building strong
+      skills in programming (C++, Python), web development, cybersecurity, and digital logic design.
+  </p>
+  <p>
+    To complement my academic journey, I am also growing my practical experience at Xonovate Technology, where I learned and continue to sharpen my skills in modern web development.
+     These experiences allow me to merge theory with practice, transforming ideas into impactful projects that showcase both technical depth and creative design.
+  </p>
+  <p>
+    Outside technology, I am a committed musician and dedicated trumpeter, serving weekly in my church. This balance between technology and music reflects my values of discipline, creativity, and excellence.
+</p>
+  <p>
+My ultimate goal is to combine my technical expertise, creativity, and dedication to continuous learning in order to contribute meaningfully to the technology space,
+ while also staying true to my values of service, growth, and community impact.
+  </p>
+  </section>
 
+  
+  <section class="skills" id="skills">
+    <h2>My Skills</h2>
+    <div class="skill-cards">
+      <div class="card">HTML & CSS</div>
+      <div class="card">Responsive Design</div>
+      <div class="card">JavaScript (learning)</div>
+      
+    </div>
+  </section>
+
+  
+  <section class="hobbies">
+    <h2>My Hobbies</h2>
+    <div class="hobby-cards">
+      <div class="card">Playing Music</div>
+      <div class="card">Reading Books</div>
+      <div class="card">Tech Exploration</div>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <h1>My Projects</h1>
+    <div class="project-cards">
+      <a href="Project/ecoliving/index.html" target="_blank" class="card">
+        <img src="images/project2.png" alt="Project 1">
+       <h3>Eco Living</h3>
+        <p>EcoLiving is a web project that promotes sustainable living through tips on recycling, eco-friendly habits, and green lifestyle choices. It’s designed to raise awareness about caring for the environment in a simple and engaging way.</p>
+        <button class="btn">View Project</button>
+      </a>
+      <a href="Project/Travemate/index.html" target="_blank" class="card">
+        <img src="images/project1.png" alt="Project bn2">
+        <h3>TravelMate</h3>
+        <p>TravelMate is a simple web project that helps users plan and organize their trips easily. It provides an inviting landing page with a clean design that highlights destinations and travel tips. The goal is to make trip planning more engaging and stress-free.</p>
+        <button class="btn">View Project</button>
+      </a>
+   <a href="Project/healthy-living/index.html" target="_blank" class="card">
+        <img src="images/project3.png" alt="Project 3">
+        <h3>Healthy Living</h3>
+        <p>Healthy Living is a web project that promotes wellness through balanced habits and lifestyle choices. It shares tips on nutrition, fitness, and mental health to inspire healthier daily routines. The aim is to encourage users to make simple choices that improve overall wellbeing.</p>
+        <button class="btn">View Project</button>
+   </a>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h1>Contact Me</h1>
+    <form class="contact-form">
+     <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+ 
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" placeholder="Write your message..." required></textarea>
+
+      <button type="submit" class="btn">Send</button>
+    </form>
+
+    <div class="contact-info">
+      <p>Emax : <strong>dotseelijah0@gmail.com</strong></p>
+      <p>Follow me on:
+        <a href="https://github.com/Alalar32" target="_blank">GitHub</a> |
+        <a href="#" target="_blank">LinkedIn</a>
+      </p>
+    </div>
+  </section>
+  
   <footer>
     <p>© Copyright Elijah. All Rights Reserved</p>
   </footer>
 </body>
 </html>
+
+    

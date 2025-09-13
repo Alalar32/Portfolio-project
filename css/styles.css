@@ -60,11 +60,14 @@ a:hover {
 
 
 .navbar {
-  display: flex;
-  justify-content:space-between;
-  align-items: center;
-  padding: 15px;
-  background: #0A192F;
+      top: 0;
+      left: 0;
+      position: fixed;       
+      width: 100%;
+      display: flex;
+      justify-content: space-between;  
+      background: #1f1f1f;
+      padding: 10px 40px;              
 }
 
 .navbar .logo {
@@ -83,14 +86,25 @@ a:hover {
   font-weight: bold;
 }
 
-.navbar .nav-links a.active {
+.navbar .nav-links a:active{
   color: #64FFDA;
 }
 
 
+
+
+.navbar .nav-links a {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+
+
+
+
 .hero {
+  padding: 100px 20px 60px;
   text-align: center;
-  padding: 64px 32px;
   background: #112240;
 }
 
@@ -101,7 +115,7 @@ a:hover {
 .btn {
   display: inline-block;
   margin-top: 16px;
-  padding: 11px 24px; 
+  padding: 10px;
   background: #64FFDA;
   color: #0A192F;
   font-weight: bold;
@@ -121,7 +135,7 @@ a:hover {
 
 
 section {
-  padding: 48px 32px; 
+  padding: 20px 30px;
 }
 
 h1, h2, h3 {
@@ -139,7 +153,7 @@ h1, h2, h3 {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 32px; 
+  gap: 32px;
 }
 
 .profile-pic {
@@ -155,16 +169,17 @@ h1, h2, h3 {
 .skill-cards, .hobby-cards, .project-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px; 
+  gap: 24px;
   justify-content: center;
 }
 
 .card {
+  /* display: flex; */
   background: #112240;
   padding: 24px;
   border-radius: 8px;
   text-align: center;
-  flex: 1 1 250px;
+  flex:  300px;
   transition: transform 0.3s;
 }
 
@@ -182,8 +197,8 @@ h1, h2, h3 {
 .contact-form {
   display: flex;
   flex-direction: column;
-  gap: 16px; 
-    max-width: 500px;
+  gap: 16px;
+  max-width: 500px;
   margin: auto;
 }
 
@@ -195,19 +210,18 @@ h1, h2, h3 {
 }
 
 .contact-info {
-  margin-top: 32px; 
+  margin-top: 24px;
   text-align: center;
 }
 
 
 footer {
   text-align: center;
-  padding: 16px; 
+  padding: 16px;
   background: #0A192F;
-  margin-top: 48px;
+  margin-top: 32px;
   border-top: 1px solid #64FFDA;
 }
-
 
 @media (max-width: 768px) {
   .about {
